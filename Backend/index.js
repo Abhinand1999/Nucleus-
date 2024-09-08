@@ -21,7 +21,10 @@ const corsOptions = {
 app.get("/", (req, res) => {
     res.send("HELLO MEDICARE");
   });
-
+app.get("/home", (req, res) => {
+    res.send("HELLO home");
+  });
+  
 // middleware
 app.use(express.json()); // Corrected usage
 app.use(cookieParser());
