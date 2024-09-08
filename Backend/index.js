@@ -23,8 +23,9 @@ app.get("/", (req, res) => {
   });
 app.get("/home", (req, res) => {
     res.send("HELLO home");
+    
   });
-  
+
 // middleware
 app.use(express.json()); // Corrected usage
 app.use(cookieParser());
