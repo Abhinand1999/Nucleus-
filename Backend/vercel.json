@@ -7,18 +7,6 @@
 ],
 "routes": [
   {
-    "src": "/api/v1/auth(.*)",
-    "dest": "/Routes/auth.js"
-  },
-  {
-    "src": "/api/v1/users(.*)",
-    "dest": "/Routes/user.js"
-  },
-  {
-    "src": "/api/v1/doctors(.*)",
-    "dest": "/Routes/doctors.js"
-  },
-  {
     "src": "/(.*)",
     "dest": "/index.js"
   }
