@@ -1,23 +1,26 @@
-{
-  "version": 2,
-  "builds": [
-    {
-      "src": "index.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    { 
-      "src": "/api/auth", 
-      "dest": "/Routes/auth.js" 
-    },
-    { 
-      "src": "/api/doctors", 
-      "dest": "/Routes/doctors.js" 
-    },
-    { 
-      "src": "/api/user", 
-      "dest": "/Routes/user.js" 
-    }
-  ]
+{ "version": 2,
+"builds": [
+  {
+    "src": "index.js",
+    "use": "@vercel/node"
+  }
+],
+"routes": [
+  {
+    "src": "/api/v1/auth(.*)",
+    "dest": "/Routes/auth.js"
+  },
+  {
+    "src": "/api/v1/users(.*)",
+    "dest": "/Routes/user.js"
+  },
+  {
+    "src": "/api/v1/doctors(.*)",
+    "dest": "/Routes/doctors.js"
+  },
+  {
+    "src": "/(.*)",
+    "dest": "/index.js"
+  }
+]
 }
