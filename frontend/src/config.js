@@ -1,2 +1,2 @@
-export const Base_URL="http://localhost:3000"
+export const Base_URL="https://nucleus-joz2.onrender.com"
 export const token=localStorage.getItem("token");
